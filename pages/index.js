@@ -27,6 +27,7 @@ export default function Home() {
         <div className='flex flex-row'><b className='text-blue-800'>Phone:</b>   +233594891672</div>
         <div className='flex flex-row'><b className='text-blue-800'>Whatsapp Number:</b>  +233506260276</div>
         <div className='flex flex-row'><b className='text-blue-800'>E-mail:</b>   israelgayina606@gmail.com, isotopegayina606@gmail.com</div>
+        <div className='flex flex-row'><b className='text-blue-800'>Github Porfolio:</b>   https://github.com/IsotopeAlpha</div>
       </div>
       <br />
       <div className='md:w-[80vw] md:ml-[8vw] '>
