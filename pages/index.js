@@ -139,6 +139,7 @@ export default function Home() {
         <div>
           <ul className='list-disc list-inside'>
             <li><a href='https://play.google.com/store/apps/details?id=com.iso.mola_app'>Mola - For hostel booking around the University of Cape Coast.</a></li>
+            <li><a href='https://play.google.com/store/apps/details?id=com.mola.hostel_manager_mobile'>Mola Hostel Manager App</a></li>
             <li><a href='https://sky2cfreight.vercel.app/'>https://sky2cfreight.vercel.app/</a></li>
             <li><a href='https://del-ushering.vercel.app/'>https://del-ushering.vercel.app/</a></li>
           </ul>
