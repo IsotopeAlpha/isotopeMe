@@ -27,7 +27,7 @@ export default function Home() {
         <div className='flex flex-row'><b className='text-blue-800'>Phone:</b>   +233594891672</div>
         <div className='flex flex-row'><b className='text-blue-800'>Whatsapp Number:</b>  +233506260276</div>
         <div className='flex flex-row'><b className='text-blue-800'>E-mail:</b>   israelgayina606@gmail.com, isotopegayina606@gmail.com</div>
-        <div className='flex flex-row'><b className='text-blue-800'>Github Porfolio:</b>   https://github.com/IsotopeAlpha</div>
+        <div className='flex flex-row'><b className='text-blue-800'>Github Porfolio:</b>   <a href='https://github.com/IsotopeAlpha'>https://github.com/IsotopeAlpha</a></div>
       </div>
       <br />
       <div className='md:w-[80vw] md:ml-[8vw] '>
@@ -138,7 +138,7 @@ export default function Home() {
         <div className='text-xl text-blue-800 font-bold italic '>Apps and Sites Built By Me</div>
         <div>
           <ul className='list-disc list-inside'>
-            <li>Mola - For hostel booking around the University of Cape Coast.</li>
+            <li><a href='https://play.google.com/store/apps/details?id=com.iso.mola_app'>Mola - For hostel booking around the University of Cape Coast.</a></li>
             <li><a href='https://sky2cfreight.vercel.app/'>https://sky2cfreight.vercel.app/</a></li>
             <li><a href='https://del-ushering.vercel.app/'>https://del-ushering.vercel.app/</a></li>
           </ul>
