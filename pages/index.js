@@ -17,7 +17,7 @@ export default function Home() {
           </div>
         </div>
         <div> 
-            <Image src={prof} alt="Profile Image" className="absolute w-[15vw] "/>
+            <Image src={prof} alt="Profile Image" className="absolute w-[15vw] md:w-[10vw]"/>
           </div>
       </div>
       
