@@ -8,29 +8,45 @@ export default function Home() {
     <Head>
       <title>Isotope's CV</title>
     </Head>
-    <div className='w-[100vw] md:mr-6 p-6 bg-white mx-auto text-black'>
+    <div className='w-[100vw] md:mr-6 mb-4 p-6 bg-white mx-auto text-black bg-gray-100'>
       <div className='w-[70vw] justify-between flex'>
         <div className='text-3xl text-blue-800 font-bold italic uppercase'>
-          <div  className='text-3xl text-blue-800 font-bold italic uppercase'>Israel Gayina</div>
-          <div className='text-xl text-blue-800 font-bold italic '>
+          <div  className='text-3xl text-blue-800 font-bold italic uppercase font-mono'>Israel Gayina</div>
+          <div className='text-lg text-blue-800 font-bold italic font-mono'>
             Computer Engineer
           </div>
         </div>
         <div> 
-            <Image src={prof} alt="Profile Image" className="absolute w-[15vw] md:w-[10vw]"/>
+            <Image src={prof} alt="Profile Image" className="absolute w-[15vw] md:w-[10vw] rounded-3xl shadow-lg hover:w-[25vw]"/>
           </div>
       </div>
-      
-      <br/>
-      <div className='md:text-md italic '>
-        <div className='flex flex-row'><b className='text-blue-800'>Address:</b>  VK-0289-0336, Keta, Volta, Ghana.</div>
-        <div className='flex flex-row'><b className='text-blue-800'>Phone:</b>   +233594891672</div>
-        <div className='flex flex-row'><b className='text-blue-800'>Whatsapp Number:</b>  +233506260276</div>
-        <div className='flex flex-row'><b className='text-blue-800'>E-mail:</b>   israelgayina606@gmail.com, isotopegayina606@gmail.com</div>
-        <div className='flex flex-row'><b className='text-blue-800'>Github Porfolio:</b>   <a href='https://github.com/IsotopeAlpha'>https://github.com/IsotopeAlpha</a></div>
-      </div>
+      <div className='md:text-sm italic'>
+        <table>
+          <tr>
+            <td className='text-blue-800 font-bold pr-2'>Address:</td>
+            <td>VK-0289-0336, Keta, Volta, Ghana.</td>
+          </tr>
+          <tr>
+            <td className='text-blue-800 font-bold pr-2'>Phone:</td>
+            <td>+233594891672</td>
+          </tr>
+          <tr>
+            <td className='text-blue-800 font-bold pr-2'>Whatsapp Number:</td>
+            <td>+233506260276</td>
+          </tr>
+          <tr>
+            <td className='text-blue-800 font-bold pr-2'>E-mail:</td>
+            <td>israelgayina606@gmail.com, isotopegayina606@gmail.com</td>
+          </tr>
+          <tr>
+            <td className='text-blue-800 font-bold pr-2'>Github Porfolio:</td>
+            <td><a href='https://github.com/IsotopeAlpha'>https://github.com/IsotopeAlpha</a></td>
+          </tr>
+        </table>
+        </div>
       <br />
-      <div className='md:w-[80vw] md:ml-[8vw] '>
+      <div className='md:w-[80vw] md:ml-[8vw] md:h-full h-[50vh] overflow-auto bg-white p-5 rounded shadow-md'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase mb-4'>Overview</div>
       Detail-oriented, organized, and meticulous employee. Works at a fast pace to meet tight deadlines.
       Enthusiastic team player ready to contribute to company success. Software Developer is talented at translating customer requirements into tesdiv engineering plans.
       Maintains exceptional development quality from conception through distribution. Works alongside clients and colleagues through all stages of development to produce outstanding final products.
@@ -41,10 +57,9 @@ export default function Home() {
       Enthusiastic technical professional with a complete understanding of the entire software development cycle. A hardworking and passionate job seeker with strong organizational skills eager to secure an entry-level Software Developer position. 
       Ready to help the team achieve company goals. Very good in troubleshooting and diagnosing computers for hidden faults and finding solutions to them.
       </div>
-      <div className='bg-gray-200 mt-5 p-3 border-rounded md:mr-4'>
-        <div className='text-xl text-blue-800 font-bold italic '>Work History</div>
-          <br/>
-          <div className='md:text-lg text-blue-800 font-bold italic md:flex'>
+      <div className='bg-gray-200 mt-5 p-3 border-rounded md:mr-4 rounded'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Work History</div>
+          <div className='md:text-lg text-blue-800 font-bold italic md:flex mt-4'>
               <div className='text-black  md:border-[10px]'>2021-11 to 2022-08 </div> 	
               <div className='md:border-[10px]'>Software Developer </div> 
               <div className='text-black md:border-[10px]'>Nerasol Ghana Limited, Adjiringanor, Accra, Ghana.</div>    
@@ -92,19 +107,18 @@ export default function Home() {
           </div>
       </div>
       <div className='mt-5 p-2'>
-        <div className='text-xl text-blue-800 font-bold italic '>Education</div><br/>
-        <div className='text-lg text-blue-800 font-bold italic'>
-              <div className='text-black md:border-[10px] border-white'>2017-08 to 2021-11</div> 	
-              <div className='md:border-[10px] border-white'>Bachelor of Science: Computer Engineering</div> 
-              <div className='text-black md:border-[10px] border-white'>University of Ghana - Legon, Accra, Ghana.</div>    
-           <br/> 
-              <div className='text-black md:border-[10px] border-white'>2013-08 to 2016-07</div> 	
-              <div className='md:border-[10px] border-white'>WASSCE: Science</div> 
-              <div className='text-black md:border-[10px] border-white'>Keta Senior High Technical School - Keta, Volta, Ghana.</div>    
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Education</div>
+        <div className='text-md font-bold italic'>
+              <div className='mt-4'>2017-08 to 2021-11</div> 	
+              <div className='text-blue-800'>Bachelor of Science: Computer Engineering</div> 
+              <div>University of Ghana - Legon, Accra, Ghana.</div>   
+              <div className='mt-4'>2013-08 to 2016-07</div> 	
+              <div className='text-blue-800'>WASSCE: Science</div> 
+              <div>Keta Senior High Technical School - Keta, Volta, Ghana.</div>   
            </div>
       </div>
-      <div className='mt-5 bg-gray-200 mr-4  p-4'>
-        <div className='text-xl text-blue-800 font-bold italic '>Skills</div>
+      <div className='mt-5 bg-white mr-4  p-4 rounded shadow-md'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Skills</div>
         <div>
           <ul className='list-disc list-inside'>
             <li>Flutter App Development</li>
@@ -121,21 +135,21 @@ export default function Home() {
         </div>
       </div>
       <div className='mt-5 p-2'>
-        <div className='text-xl text-blue-800 font-bold italic '>References</div>
-        <div className='md:text-lg text-blue-800 font-bold italic'>
-            <div className='text-black md:border-[10px] border-white'>Mr. Atuobi</div> 	
-              <div className='md:border-[10px] border-white'>Software Developers Manager(Nerasol) </div> 
-              <div className='text-black md:border-[10px] border-white'>+233247888892</div>    
-              <div className='text-black md:border-[10px] border-white'>Mr. Selasie</div> 	
-              <div className='md:border-[10px] border-white'>Hardware Engineering Manager(UGCS)</div> 
-              <div className='text-black md:border-[10px] border-white'>+233244266938</div>    
-              <div className='text-black md:border-[10px] border-white'>Mr. Kennedy Sallah</div> 	
-              <div className='md:border-[10px] border-white'>CEO(Kensallah Print Shop and Services)</div> 
-              <div className='text-black md:border-[10px] border-white'>+233249983901</div>    
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>References</div>
+        <div className='md:text-md font-bold italic'>
+            <div className='mt-4'>Mr. Atuobi</div> 	
+              <div className='text-blue-800'>Software Developers Manager(Nerasol) </div> 
+              <div>+233247888892</div>    
+              <div className='mt-4'>Mr. Selasie</div> 	
+              <div className='text-blue-800'>Hardware Engineering Manager(UGCS)</div> 
+              <div>+233244266938</div>    
+              <div className='mt-4'>Mr. Kennedy Sallah</div> 	
+              <div className='text-blue-800'>CEO(Kensallah Print Shop and Services)</div> 
+              <div>+233249983901</div>    
            </div>
       </div>
-      <div className='mt-5 bg-gray-200 mr-4  p-4'>
-        <div className='text-xl text-blue-800 font-bold italic '>Apps and Sites Built By Me</div>
+      <div className='mt-5 bg-gray-200 mr-4  p-4 shadow-lg'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Apps and Sites Built By Me</div>
         <div>
           <ul className='list-disc list-inside'>
             <li><a href='https://play.google.com/store/apps/details?id=com.iso.mola_app'>Mola - For hostel booking around the University of Cape Coast.</a></li>
