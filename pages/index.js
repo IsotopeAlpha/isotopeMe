@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import prof from '../public/prof.jpg';
+import {FaStar, FaUsers} from 'react-icons/fa'
+import {FcSupport, FcIdea, FcMindMap} from 'react-icons/fc'
+import {HiAcademicCap} from 'react-icons/hi'
+import {ImLocation, ImPhone, ImWhatsapp, ImMail2, ImGit} from 'react-icons/im'
 
 export default function Home() {
   return (
@@ -23,30 +27,30 @@ export default function Home() {
       <div className='md:text-sm italic'>
         <table>
           <tr>
-            <td className='text-blue-800 font-bold pr-2'>Address:</td>
+            <td className='text-blue-800 font-bold pr-2 flex'><ImLocation color="red"/>Address:</td>
             <td>VK-0289-0336, Keta, Volta, Ghana.</td>
           </tr>
           <tr>
-            <td className='text-blue-800 font-bold pr-2'>Phone:</td>
+            <td className='text-blue-800 font-bold pr-2 flex'><ImPhone color="black"/>Phone:</td>
             <td>+233594891672</td>
           </tr>
           <tr>
-            <td className='text-blue-800 font-bold pr-2'>Whatsapp Number:</td>
+            <td className='text-blue-800 font-bold pr-2 flex'><ImWhatsapp color="green"/>Whatsapp Number:</td>
             <td>+233506260276</td>
           </tr>
           <tr>
-            <td className='text-blue-800 font-bold pr-2'>E-mail:</td>
+            <td className='text-blue-800 font-bold pr-2 flex'><ImMail2 color="gray"/>E-mail:</td>
             <td>israelgayina606@gmail.com, isotopegayina606@gmail.com</td>
           </tr>
           <tr>
-            <td className='text-blue-800 font-bold pr-2'>Github Porfolio:</td>
+            <td className='text-blue-800 font-bold pr-2 flex'><ImGit color="indigo"/>Github Porfolio:</td>
             <td><a href='https://github.com/IsotopeAlpha'>https://github.com/IsotopeAlpha</a></td>
           </tr>
         </table>
         </div>
       <br />
-      <div className='md:w-[80vw] md:ml-[8vw] md:h-full h-[50vh] overflow-auto bg-white p-5 rounded shadow-md'>
-        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase mb-4'>Overview</div>
+      <div data-aos="fade-up" data-aos-duration="3000" className='md:w-[80vw] hover: w-[90vw] md:ml-[8vw] md:h-full h-[50vh] overflow-auto bg-white p-5 rounded shadow-md'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase mb-4'><FcIdea/> Overview</div>
       Detail-oriented, organized, and meticulous employee. Works at a fast pace to meet tight deadlines.
       Enthusiastic team player ready to contribute to company success. Software Developer is talented at translating customer requirements into tesdiv engineering plans.
       Maintains exceptional development quality from conception through distribution. Works alongside clients and colleagues through all stages of development to produce outstanding final products.
@@ -57,8 +61,8 @@ export default function Home() {
       Enthusiastic technical professional with a complete understanding of the entire software development cycle. A hardworking and passionate job seeker with strong organizational skills eager to secure an entry-level Software Developer position. 
       Ready to help the team achieve company goals. Very good in troubleshooting and diagnosing computers for hidden faults and finding solutions to them.
       </div>
-      <div className='bg-gray-200 mt-5 p-3 border-rounded md:mr-4 rounded'>
-        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Work History</div>
+      <div data-aos="fade-right" data-aos-duration="2000" className='bg-gray-200 mt-5 p-3 border-rounded md:mr-4 rounded'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase flex'>Work History<FcSupport color="yellow"/></div>
           <div className='md:text-lg text-blue-800 font-bold italic md:flex mt-4'>
               <div className='text-black  md:border-[10px]'>2021-11 to 2022-08 </div> 	
               <div className='md:border-[10px]'>Software Developer </div> 
@@ -107,7 +111,7 @@ export default function Home() {
           </div>
       </div>
       <div className='mt-5 p-2'>
-        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Education</div>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase flex'><HiAcademicCap color="red"/> Education</div>
         <div className='text-md font-bold italic'>
               <div className='mt-4'>2017-08 to 2021-11</div> 	
               <div className='text-blue-800'>Bachelor of Science: Computer Engineering</div> 
@@ -117,8 +121,8 @@ export default function Home() {
               <div>Keta Senior High Technical School - Keta, Volta, Ghana.</div>   
            </div>
       </div>
-      <div className='mt-5 bg-white mr-4  p-4 rounded shadow-md'>
-        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Skills</div>
+      <div data-aos="fade-right" data-aos-duration="2000" className='mt-5 bg-white mr-4  p-4 rounded shadow-md'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase flex'><FaStar color="gold"/> Skills<FaStar color="gold"/> </div>
         <div>
           <ul className='list-disc list-inside'>
             <li>Flutter App Development</li>
@@ -135,7 +139,7 @@ export default function Home() {
         </div>
       </div>
       <div className='mt-5 p-2'>
-        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>References</div>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase flex'><FaUsers color="gray"/> References</div>
         <div className='md:text-md font-bold italic'>
             <div className='mt-4'>Mr. Atuobi</div> 	
               <div className='text-blue-800'>Software Developers Manager(Nerasol) </div> 
@@ -148,8 +152,8 @@ export default function Home() {
               <div>+233249983901</div>    
            </div>
       </div>
-      <div className='mt-5 bg-gray-200 mr-4  p-4 shadow-lg'>
-        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase'>Apps and Sites Built By Me</div>
+      <div data-aos="fade-right" data-aos-duration="3000" className='mt-5 bg-gray-200 mr-4  p-4 shadow-lg'>
+        <div className='text-xl text-blue-800 font-bold italic font-mono uppercase flex'><FcMindMap/> Apps and Sites Built By Me</div>
         <div>
           <ul className='list-disc list-inside'>
             <li><a href='https://play.google.com/store/apps/details?id=com.iso.mola_app'>Mola - For hostel booking around the University of Cape Coast.</a></li>
